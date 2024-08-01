@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momcafé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Momcafé</h1>
+    </header>
+
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="Acceso.html">Acceso de Usuarios</a>
+    </nav>
+
+    <section class="content">
+        <h2>Acceso de Usuarios</h2>
+        <form id="loginForm">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Iniciar Sesión</button>
+            <p id="errorMessage"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momcafé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Momcafé</h1>
+    </header>
+
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="Acceso.html">Acceso de Usuarios</a>
+    </nav>
+
+    <section class="content">
+        <h2>Gestión de Productos</h2>
+        
+        <div class="product" id="product1">
+            <img src="./imagenes/Imagen1.jpg" alt="Café 1">
+            <h3>Café Especial</h3>
+            <p>Precio: $10,000 COP</p>
+            <p>Stock Actual: <span id="stock1">50</span></p>
+            <button onclick="addProduct(1)">Agregar Producto</button>
+            <button onclick="removeProduct(1)">Eliminar Producto</button>
+        </div>
+
+        <div class="product" id="product2">
+            <img src="./imagenes/Imagen2.jpg" alt="Café 2">
+            <h3>Café Tradicional</h3>
+            <p>Precio: $8,000 COP</p>
+            <p>Stock Actual: <span id="stock2">30</span></p>
+            <button onclick="addProduct(2)">Agregar Producto</button>
+            <button onclick="removeProduct(2)">Eliminar Producto</button>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
